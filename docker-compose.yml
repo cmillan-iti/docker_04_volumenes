@@ -3,7 +3,7 @@ services:
   web:
     build: .
     volumes:
-      - ./:/app
+      - ./app.py:/app/app.py
     ports:
       - "8090:5000"
   redis:
